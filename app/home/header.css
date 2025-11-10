@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.recroot-header-appbar {
+  background: #fff !important;
+  box-shadow:  none !important;
+  height: 70px;
+  z-index: 1200;
+}
+
+.recroot-header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding: 0 16px !important;
+}
+.recroot-header-container {
+  height: 100%;
+}
+
+.recroot-header-allnav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.recroot-header-logo {
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.recroot-header-nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.recroot-header-auth {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.recroot-header-nav-item {
+  color: #434343 !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  position: relative;
+  font-family: "Inter", sans-serif !important;
+}
+
+.recroot-header-hamburger {
+  display: none !important;
+  color: #006cd9 !important;
+}
+
+.mobile-logo {
+  display: none;
+}
+.recroot-header-login {
+  text-transform: none !important;
+  font-family: "Inter", sans-serif !important;
+  color: #006CD9;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .recroot-header-appbar {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1) !important;
+  height: 68px !important;
+}
+  .recroot-header-nav,
+  .recroot-header-auth,
+  .desktop-logo {
+    display: none !important;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
+  .recroot-header-hamburger {
+    display: block !important;
+    color: #0087FF;
+    border: 4px !important;
+    width: 28px !important;
+  }
+
+  .recroot-header-toolbar {
+    padding: 0 0px !important;
+  }
+}

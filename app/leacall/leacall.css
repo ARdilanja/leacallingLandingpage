@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.leaContainer {
+    background-color: #F1F8FF;
+    border-radius: 12px;
+    /* padding: 40px; */
+    margin: 50 auto;
+    width: 1090px !important;
+    height: 200px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.leaTitle {
+    color: #000000;
+    font-size: 32px !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 48px !important;
+}
+
+.highlight {
+    color: #000000;
+    display: block;
+    font-size: 32px !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 48px !important;
+}
+
+.leaText {
+    color: #000000;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 400 !important;
+    padding: 0 0 0 40px !important;
+    border-left: 1px solid #000000 !important;
+}
+
+.lea-col1 {
+    /* border-right: 1px solid #000000 !important; */
+    /* padding-right: 20px; */
+    padding: 40px !important;
+    width: 25% !important;
+}
+.lea-col2 {
+    /* border-right: 1px solid #000000 !important; */
+    /* padding-right: 20px; */
+    /* padding: 40px !important; */
+    width: 75% !important;
+    padding: 40px 40px 40px 0 !important;
+}
+
+@media (max-width: 900px) {
+    .leaContainer {
+        /* padding: 10px; */
+        /* margin: 20px; */
+        width: 358px !important;
+        height: 368px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .lea-col1 {
+        width: 100% !important;
+        padding: 20px 20px 0 20px !important;
+        /* margin-bottom: 20px; */
+    }
+    .lea-col2 {
+        width: 100% !important;
+        /* padding-right: 0;
+        padding-bottom: 15px; */
+        /* margin-bottom: 20px; */
+    }
+    .leaText{
+        border-left: none !important;
+    }
+
+    .highlight {
+        color: #8329E3;
+        display: inline;
+        font-size: 24px !important;
+        line-height: 32px !important;
+         font-family: "Inter", sans-serif !important;
+    font-weight: 500 !important;
+    }
+
+    .leaTitle {
+        text-align: center;
+        font-size: 24px !important;
+        line-height: 32px !important;
+         font-family: "Inter", sans-serif !important;
+    font-weight: 500 !important;
+    }
+
+    .leaText {
+        text-align: justify;
+        font-size: 15px !important;
+        line-height: 24px !important;
+         font-family: "Inter", sans-serif !important;
+         font-weight: 400 !important;
+    }
+}

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.problems-container {
+  background-color: #FFFFFF;
+  /* min-height: 100vh; */
+  text-align: center;
+}
+
+.problems-title {
+  font-weight: 500 !important;
+  color: #000000;
+  margin-bottom: 50px !important;
+  font-size: 24px;
+  font-family: "Inter", sans-serif !important;
+}
+
+.problem-row {
+  margin-bottom: 40px !important;
+}
+
+.problem-card {
+  background-color: #F1F8FF !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  height: 344px;
+  width: 344px;
+  display: flex;
+  flex-direction: column;
+}
+
+.problem-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px !important;
+}
+
+.problem-title {
+  color: #01040c !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+  font-family: "Inter", sans-serif !important;
+
+}
+
+.problem-description {
+  color: #000000 !important;
+  font-size: 18px !important;
+  margin-bottom: 15px !important;
+  line-height: 24px;
+  font-weight: 400 !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.problem-image {
+  border-radius: 10px;
+  object-fit: contain;
+  width: 296px;
+  height: 176px;
+}
+
+.problem-card-1 {
+  background-color: #ebf1fa !important;
+  border-radius: 24px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 186px !important;
+  width: 528px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.problem-title-1 {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif !important;
+}
+
+.problem-description-1 {
+  color: #000000 !important;
+  font-size: 18px !important;
+  margin-bottom: 15px !important;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif !important;
+}
+
+.problem-content-row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px !important;
+}
+
+.text-section {
+  flex: 1;
+  text-align: left;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+.image-wrapper-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.problem-image-1 {
+  border-radius: 10px;
+  object-fit: contain;
+  height: 144px;
+  width: 168px;
+}
+
+
+.mobile-scroll {
+  display: none;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  width: 280px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-card {
+  flex: 0 0 90%;
+  scroll-snap-align: center;
+  background-color: #FFFFFF;
+  border-radius: 24px !important;
+  width: 280px !important;
+}
+
+.problem-title-2 {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.problem-description-2 {
+  color: #000000 !important;
+  font-size: 14px !important;
+  margin-bottom: 15px !important;
+  line-height: 20px;
+  font-weight: 400 !important;
+}
+
+.mobile-card.active {
+  background-color: #F1F8FF;
+  transform: scale(1.02);
+}
+
+.scroll-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #F1F8FF;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  width: 24px;
+  background-color: #006CD9;
+}
+
+.scroll-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow-btn {
+  background-color: #f1f8ff !important;
+  border: 1px solid #d1e4ff !important;
+  color: #006cd9 !important;
+  width: 36px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  margin: 0 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow-btn:hover {
+  background-color: #006cd9 !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+
+  .problems-container {
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    text-align: center;
+    margin-top: 30px !important;
+  }
+
+  .mobile-scroll {
+    display: block;
+    padding: 16px 5px;
+  }
+
+  .problems-title {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    margin-bottom: 10px !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 500 !important;
+  }
+
+  .scroll-container {
+    gap: 12px;
+    padding-bottom: 12px;
+    width: 280px;
+    height: 150px;
+  }
+
+  .mobile-card.active {
+    box-shadow: none !important;
+    background-color: #F1F8FF !important;
+
+  }
+
+  .mobile-card {
+    box-shadow: none !important;
+    background-color: #F1F8FF !important;
+
+  }
+
+  .problem-title-2 {
+    font-size: 13px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
+    margin-bottom: 4px !important;
+    text-align: left;
+    color: #000000 !important;
+    font-family: "Inter", sans-serif !important;
+  }
+
+  .problem-description-2 {
+    font-size: 11px !important;
+    line-height: 20px !important;
+    margin-bottom: 8px !important;
+    font-weight: 400 !important;
+    text-align: left;
+    color: #000000 !important;
+    font-family: "Inter", sans-serif !important;
+  }
+
+  .scroll-indicators {
+    margin-top: 6px;
+    gap: 4px;
+  }
+
+  .dot {
+    width: 20px;
+    height: 2px;
+  }
+
+  .dot.active {
+    width: 18px;
+  }
+
+  .scroll-controls {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .arrow-btn {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .scroll-container {
+    width: 80%;
+    scroll-snap-type: x mandatory;
+  }
+
+  .arrow-icon {
+    font-size: 10px !important;
+  }
+}

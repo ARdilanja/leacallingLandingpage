@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.lea-container {
+  background-color: #FFFFFF;
+  padding: 40px 0;
+  /* min-height: 100vh; */
+  font-family: "Inter", sans-serif;
+}
+
+.lea-wrapper {
+  width: 1440px;
+  height: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lea-title {
+  font-size: 50px !important;
+  font-weight: 500 !important;
+  color: #000000;
+  margin-bottom: 64px;
+  line-height: 64px;
+  text-align: center !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.lea-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: start;
+  margin-top: 50px !important;
+}
+
+.lea-card {
+  max-width: 360px;
+  background: transparent;
+  border-radius: 16px;
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lea-image-wrapper {
+  position: relative;
+  width: 344px !important;
+  height: 180px !important;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.lea-image {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.lea-card:hover .lea-image {
+  transform: scale(1.05);
+}
+
+.lea-card-content {
+  padding: 20px 0;
+  display: flex;
+  width: 344px !important;
+  height: 72px !important;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lea-card-text {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400 !important;
+  font-family: "Inter", sans-serif !important;
+  text-align: left !important;
+}
+
+@media (max-width: 768px) {
+  .lea-container {
+    padding: 40px 20px;
+    background-color: #F1F8FF;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .lea-wrapper {
+    width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .lea-title {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    line-height: 30px !important;
+    text-align: center !important;
+    color: #000000;
+    margin-bottom: 32px !important;
+  }
+
+  .lea-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    margin: 0 auto;
+  }
+
+  .lea-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100% !important;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .lea-image-wrapper {
+    display: none !important;
+  }
+
+  .lea-icon-wrapper {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2px;
+  }
+
+  .lea-icon {
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain;
+  }
+
+  .lea-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 !important;
+  }
+
+  .lea-card-text {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    color: #000;
+    text-align: left !important;
+    font-weight: 400 !important;
+    font-family: "Inter", sans-serif !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .lea-title {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    font-weight: 500 !important;
+    font-family: "Inter", sans-serif !important;
+    margin-bottom: 24px !important;
+  }
+
+  .lea-card {
+    gap: 14px;
+  }
+
+  .lea-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .lea-card-text {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+    margin-top: 10px !important;
+    font-family: "Inter", sans-serif !important;
+    width: 290px !important;
+    height: 96px !important;
+    text-align: justify !important;
+  }
+}

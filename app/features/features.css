@@ -238,6 +238,7 @@
     .page-wrapper {
         position: relative !important;
         width: 100% !important;
+        height: 628px !important;
         /* min-height: 100vh !important; */
         display: flex !important;
         flex-direction: column !important;
@@ -246,7 +247,7 @@
         padding: 24px 16px 24px !important; /* was 48px */
         box-sizing: border-box !important;
         background: #ffffff !important;
-        bottom: 250px !important;
+        /* bottom: 250px !important; */
     }
 
     /* ✅ Mobile Header - Centered & Balanced */
